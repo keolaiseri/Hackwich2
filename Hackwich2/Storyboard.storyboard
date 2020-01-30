@@ -48,21 +48,42 @@
             </objects>
             <point key="canvasLocation" x="-3306" y="-379"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Qcv-gT-BlV">
             <objects>
-                <viewController id="Fb9-Ga-ndh" sceneMemberID="viewController">
+                <viewController id="Fb9-Ga-ndh" customClass="secondViewController" customModule="Hackwich2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZH-1N-fLQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfs-Jo-LVU">
+                                <rect key="frame" x="126" y="107" width="162" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYM-Ro-Jsh">
+                                <rect key="frame" x="95" y="399" width="224" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Color "/>
+                                <connections>
+                                    <action selector="changeColor:" destination="Fb9-Ga-ndh" eventType="touchUpInside" id="gCz-Gq-Eiw"/>
+                                    <action selector="changeColorButtonPressed:" destination="Fb9-Ga-ndh" eventType="touchUpInside" id="Xid-7F-wDl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pkP-yN-f5B"/>
                     </view>
                     <navigationItem key="navigationItem" id="VGG-SE-Pnw"/>
+                    <connections>
+                        <outlet property="firstLabel" destination="Yfs-Jo-LVU" id="qc6-PP-8bP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhQ-5a-L3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2454" y="-396"/>
+            <point key="canvasLocation" x="-2455.072463768116" y="-396.42857142857139"/>
         </scene>
     </scenes>
 </document>
